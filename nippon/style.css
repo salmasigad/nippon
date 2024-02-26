@@ -106,3 +106,64 @@ p {
     width: 100px;
     margin: 20px;
 }
+
+/****************************** om os side*******************************************/
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: left;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    
+
+}
+
+.about-section {
+    margin-bottom: 50px; /* Added margin between sections for better separation */
+}
+
+.omos-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image {
+    flex: 1;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image img {
+    width: 100%; /* Adjusted to take 100% of the container */
+}
+
+.image:hover img {
+    transform: scale(1.1);
+}
+
+.content {
+    flex: 1;
+    margin-right: 30px; /* Adjusted margin for better spacing */
+}
+
+.content p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-right: 40px;
+
+}
+/* For alternating sections, adjust the flex order */
+.about-section:nth-child(even) .omos-content {
+    flex-direction: row-reverse;
+}
+
+
+/***************************** om os side slut ******************************/
